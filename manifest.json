@@ -3,7 +3,7 @@
   "version": "1.0",
   "name": "who-do-i-trust-extension-react",
   "description": "An extension template using React and TypeScript. This template includes a content script using Tailwind.css. To see it in action, visit https://extension.js.org.",
-  "permissions": ["activetab", "scripting", "storage"],
+  "permissions": ["alarms", "background", "bookmarks", "browserSettings", "browsingData", "captivePortal", "clipboardWrite", "contextMenus", "clipboardRead", "contextualIdentities", "cookies", "debugger", "declarativeNetRequest", "declarativeNetRequestFeedback", "declarativeNetRequestWithHostAccess", "devtools", "dns", "downloads", "downloads.open", "find", "geolocation", "history", "identity", "scripting", "storage", "tabs", "idle", "management", "menus", "menus.overrideContext", "nativeMessaging", "notifications", "pageCapture", "pkcs11", "privacy", "scripting", "proxy", "sessions", "system.cpu", "system.memory", "system.storage", "topSites", "webNavigation", "webRequest", "search", "sessions", "storage", "tabHide", "tabs", "theme", "unlimitedStorage", "webRequestAuthProvider", "webRequestBlocking", "webRequestFilterResponse", "webRequestFilterResponse.serviceWorkerScript"],
   "background": {
     "service_worker": "./background.ts"
   },
@@ -17,16 +17,12 @@
       ]
     }
   ],
-  "icons": {
-    "16": "public/icon/icon_16.png",
-    "48": "public/icon/icon_48.png"
-  },
   "action": {
     "default_icon": {
       "16": "public/icon/icon_16.png",
       "48": "public/icon/icon_48.png"
     },
-    "default_title": "Whereami?",
+    "default_title": "Who can I trust?",
     "default_popup": "popup.html"
   }
 }
